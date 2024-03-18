@@ -63,3 +63,4 @@ def calc_bezier_dnc(points: List[Point], num_control: int) -> List[Point]:
             result = [points[0]] + inner + [points[num_control-1]]
 
     return result
+    

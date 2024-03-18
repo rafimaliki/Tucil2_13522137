@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 import time, sys
 
 # Create a figure and axis
-fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(7, 3.5)) 
+fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(9, 3.5)) 
 
 # Label the axes
 ax1.set_xlabel('X-axis')
@@ -67,7 +67,7 @@ for i in range(1, iterations+1):
     # try:
     #     builder = calc_bezier_dnc(builder, num_control)
     #     points = get_points(builder, num_control)
-    #     nth_iteration_points.append(points)
+    #     nth_iteration_points_dnc.append(points)
 
     #     succeses_iterations += 1
 
@@ -87,7 +87,7 @@ start_time = time.time()
 for i in range(1, iterations+1):
     nth_iteration_points_bf.append(calc_bezier_bf(control_points, num_control, i))
 
-calc_time_bf = round((time.time()-start_time)*1000)
+calc_time_bf = round((time.time()-start_time)*1000)   
 
 ''' End of Bezier calculations using bruteforce '''
 

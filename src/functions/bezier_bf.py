@@ -67,3 +67,5 @@ def calc_bezier_bf(points: List[Point], num_control: int, iter: int) -> List[Poi
         result.append(Point(x, y))
 
     return result
+
+

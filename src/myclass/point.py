@@ -15,30 +15,30 @@ class Point:
     def __str__(self):
         return f'({self.x}, {self.y})'
     
-    # Method
+
+    ''' Method
+    Calculate the midpoint between two points
+
+    Parameters: 
+    - self (Point)
+    - other (Point)
+
+    Output:
+    - Point
+    '''
     def midpoint(self, other: 'Point') -> 'Point':
-        '''
-        Calculate the midpoint between two points
-
-        Parameters: 
-        - self (Point)
-        - other (Point)
-
-        Output:
-        - Point
-        '''
         return Point((self.x + other.x) / 2, (self.y + other.y) / 2)
     
-    # Static method
+    
+    ''' Static method
+    Finding the extreme values from a list of Point objects
+    
+    Parameters:
+    - points (List[Point]): A list of points 
+    
+    Output:
+    - List[float]: A list with length of 2 representing extreme values for all points'''
     def get_extreme_point(points: List['Point']) -> List[float]:
-        '''
-        Finding the extreme values from a list of Point objects
-        
-        Parameters:
-        - points (List[Point]): A list of points 
-        
-        Output:
-        - List[float]: A list with length of 2 representing extreme values for all points'''
 
         x = []
         y = []
